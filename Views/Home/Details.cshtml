@@ -1,0 +1,17 @@
+﻿@section Title{
+    Info Dipendente
+}
+
+<div>
+    <h3>Dipente numero @Model.DipendenteId</h3>
+    <ul>
+        <li>ID Dipendente: @Model.DipendenteId</li>
+        <li>Nome: @Model.Nome</li>
+        <li>Congome: @Model.Cognome</li>
+        <li>Indirizzo: @Model.Indirizzo</li>
+        <li>Codice Fiscale: @Model.CodiceFiscale</li>
+        <li>Coniugato: @(Model.Coniugato ? "Sposato" : "Non sposato")</li>
+        <li>Figlie a carico: @Model.Figli</li>
+        <li>Mansione: @Model.Mansione</li>
+    </ul>
+</div>

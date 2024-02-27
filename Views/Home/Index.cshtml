@@ -1,0 +1,36 @@
+﻿@section Title {
+    Lista Dipendenti
+}
+
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Indirizzo</th>
+                <th>Codice Fiscale</th>
+                <th>Sposato</th>
+                <th>Figli</th>
+                <th>Mansione</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dipendente in Model)
+            {
+                <tr>
+                    <td>@dipendente.DipendenteId</td>
+                    <td>@dipendente.Nome</td>
+                    <td>@dipendente.Cognome</td>
+                    <td>@dipendente.Indirizzo</td>
+                    <td>@dipendente.CodiceFiscale</td>
+                    <td>@dipendente.Coniugato</td>
+                    <td>@dipendente.Figli</td>
+                    <td>@dipendente.Mansione</td>
+                    <td><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Details" asp-route-id="@dipendente.DipendenteId">Dettagli</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+﻿@section Title{
+    Aggiungi Dipendente
+}
+
+<form asp-controller="Home" asp-action="Add" method="post">
+    Nome:<input type="text" name="nome" /> <br />
+    Cognome:<input type="text" name="cognome" /> <br />
+    Indirizzo:<input type="text" name="indirizzo" /> <br />
+    Codice Fiscale:<input type="text" name="codicefiscale" /> <br />
+    Sposato:<input type="checkbox" name="coniugato" value="false"/> <br />
+    Figli a carico:<input type="number" name="figli" /> <br />
+    Mansione svolta:<input type="text" name="mansione" /> <br />
+    <button>Aggiungi dipendente</button>
+</form>
